@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "39vH67uX6D+8vxrBzAYPNGkzaBQu/WYEsUfEtIbzZChAWkSAU3J4HoZa8LHu1OGgGC0wyxriVc0sQhdV2X2HKw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Fabio Alves\\source\\repos\\WebApplication10\\WinFormsApp10\\WinFormsApp10.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Fabio Alves\\.nuget\\packages\\restsharp\\106.12.0\\restsharp.106.12.0.nupkg.sha512"
+  ],
+  "logs": []
+}
