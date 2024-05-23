@@ -23,9 +23,9 @@ namespace WebApplication10.Controllers
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<ProdutosCategoria>> GetProdutosCategoria(int id)
+        public async Task<ActionResult<ProdutosCategoria>> GetProdutosCategoria(string sigla)
         {
-            var produtosCategoria = await _context.ProdutosCategorias.FindAsync(id);
+            var produtosCategoria = await _context.ProdutosCategorias.FindAsync(sigla);
 
             if (produtosCategoria == null)
             {
@@ -70,9 +70,9 @@ namespace WebApplication10.Controllers
         }
 
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteProdutosCategoria(int id)
+        public async Task<IActionResult> DeleteProdutosCategoria(string sigla)
         {
-            var produto = await _context.ProdutosCategorias.FindAsync(id);
+            var produto = await _context.ProdutosCategorias.FindAsync(sigla);
             if (produto == null)
             {
                 return NotFound();

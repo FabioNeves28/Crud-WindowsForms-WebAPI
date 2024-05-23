@@ -47,6 +47,7 @@
             label3 = new Label();
             dataGridView1 = new DataGridView();
             lblMensagem = new Label();
+            button1 = new Button();
             panel1.SuspendLayout();
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
@@ -61,6 +62,7 @@
             panel1.BackColor = Color.FromArgb(52, 100, 252);
             panel1.Controls.Add(label1);
             panel1.Controls.Add(groupBox1);
+            panel1.Controls.Add(button5);
             panel1.Location = new Point(0, -2);
             panel1.Name = "panel1";
             panel1.Size = new Size(183, 453);
@@ -81,6 +83,7 @@
             // 
             // groupBox1
             // 
+            groupBox1.Controls.Add(button1);
             groupBox1.Controls.Add(checkBox1);
             groupBox1.Controls.Add(label2);
             groupBox1.Controls.Add(txtNome);
@@ -88,7 +91,6 @@
             groupBox1.Controls.Add(pictureBox3);
             groupBox1.Controls.Add(pictureBox2);
             groupBox1.Controls.Add(pictureBox1);
-            groupBox1.Controls.Add(button5);
             groupBox1.Controls.Add(btnExcluir);
             groupBox1.Controls.Add(btnAdicionar);
             groupBox1.Controls.Add(btnEditar);
@@ -169,11 +171,11 @@
             // 
             // button5
             // 
-            button5.Location = new Point(18, 282);
+            button5.Location = new Point(18, 398);
             button5.Name = "button5";
-            button5.Size = new Size(113, 23);
+            button5.Size = new Size(141, 42);
             button5.TabIndex = 4;
-            button5.Text = "Buscar";
+            button5.Text = "Busca Geral";
             button5.UseVisualStyleBackColor = true;
             button5.Click += button5_Click;
             // 
@@ -248,6 +250,15 @@
             lblMensagem.Size = new Size(620, 23);
             lblMensagem.TabIndex = 4;
             // 
+            // button1
+            // 
+            button1.Location = new Point(18, 282);
+            button1.Name = "button1";
+            button1.Size = new Size(113, 23);
+            button1.TabIndex = 5;
+            button1.Text = "Buscar Descrição";
+            button1.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -295,5 +306,6 @@
         private DataGridView dataGridView1;
         private Label lblMensagem;
         private CheckBox checkBox1;
+        private Button button1;
     }
 }

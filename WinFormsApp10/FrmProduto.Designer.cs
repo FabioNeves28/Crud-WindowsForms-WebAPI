@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmProduto));
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
@@ -43,7 +44,10 @@
             panel1 = new Panel();
             label7 = new Label();
             comboBox2 = new ComboBox();
+            btnGerarPdf = new Button();
+            pictureBox1 = new PictureBox();
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -181,12 +185,39 @@
             comboBox2.Size = new Size(249, 23);
             comboBox2.TabIndex = 14;
             // 
+            // btnGerarPdf
+            // 
+            btnGerarPdf.BackColor = Color.DarkSalmon;
+            btnGerarPdf.ImageAlign = ContentAlignment.TopLeft;
+            btnGerarPdf.Location = new Point(213, 435);
+            btnGerarPdf.Name = "btnGerarPdf";
+            btnGerarPdf.Size = new Size(156, 43);
+            btnGerarPdf.TabIndex = 15;
+            btnGerarPdf.Text = "Gerar PDF";
+            btnGerarPdf.UseVisualStyleBackColor = false;
+            btnGerarPdf.Visible = false;
+            btnGerarPdf.Click += btnGerarPdf_Click;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.BackColor = Color.Transparent;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(223, 444);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(26, 25);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 16;
+            pictureBox1.TabStop = false;
+            pictureBox1.Visible = false;
+            // 
             // FrmProduto
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Gray;
             ClientSize = new Size(582, 529);
+            Controls.Add(pictureBox1);
+            Controls.Add(btnGerarPdf);
             Controls.Add(comboBox2);
             Controls.Add(panel1);
             Controls.Add(button1);
@@ -207,6 +238,7 @@
             Load += FrmProduto_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -228,5 +260,7 @@
         private Panel panel1;
         private Label label7;
         private ComboBox comboBox2;
+        private Button btnGerarPdf;
+        private PictureBox pictureBox1;
     }
 }

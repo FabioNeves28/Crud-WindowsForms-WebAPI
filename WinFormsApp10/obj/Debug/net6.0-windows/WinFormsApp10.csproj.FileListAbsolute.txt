@@ -19,3 +19,5 @@ C:\Users\Fabio Alves\source\repos\WebApplication10\WinFormsApp10\obj\Debug\net6.
 C:\Users\Fabio Alves\source\repos\WebApplication10\WinFormsApp10\obj\Debug\net6.0-windows\WinFormsApp10.genruntimeconfig.cache
 C:\Users\Fabio Alves\source\repos\WebApplication10\WinFormsApp10\obj\Debug\net6.0-windows\ref\WinFormsApp10.dll
 C:\Users\Fabio Alves\source\repos\WebApplication10\WinFormsApp10\obj\Debug\net6.0-windows\WinFormsApp10.FrmProduto.resources
+C:\Users\Fabio Alves\source\repos\WebApplication10\WinFormsApp10\bin\Debug\net6.0-windows\BouncyCastle.Crypto.dll
+C:\Users\Fabio Alves\source\repos\WebApplication10\WinFormsApp10\bin\Debug\net6.0-windows\itextsharp.dll

@@ -22,10 +22,10 @@ namespace WebApplication10.Controllers
             return await _context.UnidadesMedidas.ToListAsync();
         }
 
-        [HttpGet("{id}")]
-        public async Task<ActionResult<UnidadesMedida>> GetUnidadesMedida(int id)
+        [HttpGet("{sigla}")]
+        public async Task<ActionResult<UnidadesMedida>> GetUnidadesMedida(string sigla)
         {
-            var unidadesMedida = await _context.UnidadesMedidas.FindAsync(id);
+            var unidadesMedida = await _context.UnidadesMedidas.FindAsync(sigla);
 
             if (unidadesMedida == null)
             {
@@ -35,7 +35,7 @@ namespace WebApplication10.Controllers
             return unidadesMedida;
         }
 
-        [HttpPut("{id}")]
+        [HttpPut("{sigla}")]
         public async Task<IActionResult> PutUnidadesMedida(string sigla, UnidadesMedida unidadesMedida)
         {
             if (sigla != unidadesMedida.Sigla)
@@ -56,7 +56,7 @@ namespace WebApplication10.Controllers
 
             return NoContent();
         }
-        [HttpDelete("{id}")]
+        [HttpDelete("{sigla}")]
         public async Task<IActionResult> DeleteUnidadesMedida(string sigla)
         {
             var unidadesMedida = await _context.UnidadesMedidas.FindAsync(sigla);
@@ -76,7 +76,7 @@ namespace WebApplication10.Controllers
             _context.UnidadesMedidas.Add(unidadesMedida);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetUnidadesMedida", new { id = unidadesMedida.Sigla }, unidadesMedida);
+            return CreatedAtAction("GetUnidadesMedida", new { sigla = unidadesMedida.Sigla }, unidadesMedida);
         }
     }
 }

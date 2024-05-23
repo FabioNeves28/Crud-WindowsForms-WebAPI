@@ -60,7 +60,7 @@ namespace WinFormsApp10
         {
 
             var client = new RestClient();
-            var request = new RestRequest("https://localhost:7288/api/Produtos" + id, Method.PUT);
+            var request = new RestRequest("https://localhost:7288/api/Produtos/" + id, Method.GET);
 
             var response = await client.ExecuteAsync<Produto>(request);
 
@@ -85,7 +85,7 @@ namespace WinFormsApp10
         public async Task<Produto> DeletarProdutoAsync(int id)
         {
             var client = new RestClient();
-            var request = new RestRequest("https://localhost:7288/api/Produtos" + id, Method.DELETE);
+            var request = new RestRequest("https://localhost:7288/api/Produtos/" + id, Method.DELETE);
 
             var response = await client.ExecuteAsync<Produto>(request);
 
