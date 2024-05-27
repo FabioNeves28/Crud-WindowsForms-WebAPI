@@ -7,6 +7,13 @@ O projeto **Crud-WindowsForms-WebAPI** é uma aplicação que consiste em duas p
 1. **Windows Forms Application**: Uma interface gráfica que interage com o usuário final, permitindo operações CRUD (Create, Read, Update, Delete).
 2. **Web API**: Uma API RESTful que serve como intermediária entre a aplicação Windows Forms e o banco de dados MySQL, realizando as operações necessárias e retornando os dados requisitados.
 
+## Imagens do Projeto
+
+![image](https://github.com/FabioNeves28/Crud-WindowsForms-WebAPI/assets/60719414/542952f9-103f-4682-a2a9-67443650b269)
+![image](https://github.com/FabioNeves28/Crud-WindowsForms-WebAPI/assets/60719414/2f56060d-9cc4-48f2-83be-10b2e393bce9)
+![image](https://github.com/FabioNeves28/Crud-WindowsForms-WebAPI/assets/60719414/4a3838e3-e75b-42a7-8928-a560fd8b6b7e)
+
+
 ## Estrutura do Projeto
 
 O projeto é dividido em três componentes principais:
